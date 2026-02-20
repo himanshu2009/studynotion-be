@@ -14,14 +14,14 @@ const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 
 // Setting up port number
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 // Loading environment variables from .env file
 dotenv.config();
 
 // Connecting to database
 database.connect();
-const allowedOrigins = ["http://localhost:3000", "http://localhost:3001"];
+const allowedOrigins = [ "http://localhost:3000" ,"https://studynotion-fe-2dlz.vercel.app"];
 
  
 // Middlewares
